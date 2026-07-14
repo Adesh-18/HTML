@@ -1,0 +1,244 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>this is about page</h1>
+    <img
+      src="https://images.unsplash.com/photo-1783682194131-7422c234bbd9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D"
+      width="200px"
+      alt="image"
+    />
+    <!-- <img src="C:\Users\adesh\OneDrive\Pictures\naruto-team-7-5k-3840x2160-19828.jpg" alt="image"> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Test</title>
+  </head>
+  <body>
+    <form action="about">
+      <h1>This is about page</h1>
+      <img src="images/637276.png" width="200px" alt="naruto" />
+    </form>
+
+    <ol>
+      <li>hello</li>
+      <li>adesh</li>
+    </ol>
+    <ul>
+      <li>html</li>
+      <li>javascript</li>
+    </ul>
+
+    <ul>
+      <li>
+        frontend
+        <ul>
+          <li>Html</li>
+          <li>css</li>
+          <li>javascript</li>
+        </ul>
+      </li>
+      <li>
+        Backend
+        <ul>
+          <li>python</li>
+          <li>Django</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- nested list -->
+    <ul>
+      <li>
+        frontend
+        <ul>
+          html
+        </ul>
+        <ul>
+          css
+        </ul>
+        <ul>
+          javascript
+        </ul>
+      </li>
+      <li>
+        Backend
+        <ul>
+          python
+        </ul>
+        <ul>
+          django
+        </ul>
+      </li>
+    </ul>
+    <!-- description list -->
+    <dl>
+      <dt>html</dt>
+      <dd>used to create the structure of a webpage</dd>
+      <dt>css</dt>
+      <dd>used to design a webpage.</dd>
+    </dl>
+    <!-- dl -> Description list
+ dt -> Description term
+ dd -> Description details
+  -->
+    <!-- basic table -->
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>skill</th>
+        <th>Level</th>
+      </tr>
+
+      <tr>
+        <td>Adesh</td>
+        <td>python</td>
+        <td>intermediate</td>
+      </tr>
+      <tr>
+        <td>Adesh</td>
+        <td>Html</td>
+        <td>beginner</td>
+      </tr>
+    </table>
+    <!-- table create the table
+ tr - table row
+ th - table heading
+ td - table data
+  -->
+
+    <!-- a table structure uses:
+ thead for headings
+ tbody - for data
+  -->
+    <table border="1">
+      <thead>
+        <tr>
+          <!-- colspan taking space of 2 columns combines columns horizantal -->
+          <!-- row span one cell occupies multiplie rows combine rows vertical -->
+          <th colspan="2">Name</th>
+          <th>Course</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Adesh</td>
+          <td>Html</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>satish</td>
+          <td>python</td>
+          <td>91</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- add a border table -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="2">hello</th>
+          <th>java</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>adesh</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- colspan -->
+
+    <!-- forms -->
+    <!-- you use forms for  -->
+    <!-- login
+   registration
+   search
+   contact forms
+   job applications
+   payments  
+  -->
+
+    <!-- form tag contains all form elements. -->
+    <!-- input tag collection from the user type decides what kind of input it is -->
+    <!-- label to describe an input -->
+    <!-- id identifies the element in the html -->
+    <!-- name identifies the datas sent to the backend -->
+    <form action="email">
+      <label for="email">Email</label>
+      <input type="email" placeholder="enter your email" />
+      <!-- this is better writing plain text because the label is properly connected to the input -->
+      <label for="password">password</label>
+      <input
+        type="password"
+        placeholder="enter password"
+        id="password"
+        name="password"
+      />
+      <button type="submit">login</button>
+
+      <label for="resume">upload resume:</label>
+      <input type="file" name="resume" id="resume" />
+      <!-- name attribute-->
+      <label for="text">enter your name</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="hello frnd fill it"
+      />
+
+      <!-- required -->
+      <!-- if the user leaves  it empty and submits the form, the browser shows validation msg -->
+      <input type="text" required placeholder="enter name" required />
+      <!-- radio buttons  when user should only one option-->
+      <input type="radio" name="gender" value="male" />
+      <label for="male">male</label>
+      <input type="radio" name="gender" value="female" />
+      <label for="female">female</label>
+      <!-- both radio buttons has same name -->
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="male">Female</label>
+      <!-- radio buttons -->
+      <label for="male">male</label>
+      <input type="radio" name="gender" value="male" />
+
+      <!-- checkboxes -->
+      <input type="checkbox" id="html" name="skills" value="Html" />
+      <label for="html">html</label>
+      <input type="checkbox" id="python" name="skills" value="python" />
+      <label for="python">python</label>
+
+      <!-- radio select one option  -->
+      <!-- check box select multiple -->
+    </form>
+    <form action="">
+      <label for="course">choose course:</label>
+      <select name="course" id="course">
+        <option value="html">Html</option>
+        <option value="python">python</option>
+        <option value="javascript">javascript</option>
+      </select>
+      <!-- text area for long text -->
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="5" cols="30"></textarea>
+
+      <!-- used for feedback comments messages descriptions -->
+
+      <!-- submit button -->
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
