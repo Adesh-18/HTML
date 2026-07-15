@@ -1,0 +1,123 @@
+<!-- attributes div span class id it is important before css and javascript -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic</title>
+  </head>
+  <body>
+    <!-- an attribute gives an extra information for html element -->
+    <a href="http://www.google.com">google</a>
+    <!-- href - attribute
+  alt - attribute
+  width = 300 attribute
+   -->
+    <img src="" alt="" />
+    <!-- src - attribute alt - attribute width - attribute -->
+    <!-- syntax <tag attribute = "value">content</tag> -->
+    <a href="about.html">About</a>
+    <!-- a - tag -->
+    <!-- href - attribute  -->
+    <!-- about.html attribute value -->
+    <!-- about content -->
+
+    <!-- 
+      href - link destination
+      src - file location
+      alt - image description
+      type - input type
+      place holder - input hint
+      width - width
+      height - height
+      id - unique identifier
+      class - group identifier
+      
+    
+    -->
+    <h1 id=" main-title">netflix</h1>
+    <!-- id uniquely identifies one element -->
+    <!-- think of a id like a adhar number it should identify one specific element on the page. -->
+    <p id="description">popular Movies</p>
+    <!-- both has id  avoid duplicate ids for beeeter understanding-->
+
+    <!-- class Attribute -->
+    <p class="movie">Avengers</p>
+    <p class="movie">Bahubali</p>
+    <!-- all three elements belongs to movie
+      later css can style all of them together
+      just understanding y class are exist 
+      -->
+
+    <!-- id vs class -->
+    <!-- this is an important concept
+     id used for one unique element 
+    -->
+    <h1 id="main-title">Netflix</h1>
+    <!-- used for multiple similar elements -->
+    <div class="movie-card">Movie1</div>
+    <!-- id = one unique element
+     class = Many elements 
+     -->
+    <!-- main title - unique - id
+ movie card - repeated - class 
+ -->
+
+    <!-- one element has have multiplie classes -->
+    <div class="movie-card popular">Avengers</div>
+    <!-- this element has two classes: movie-card popular classes are sperated by spaces -->
+    <button class="btn primary">login</button>
+
+    <!-- div means division it is a generic container used to group elements. -->
+    <div>
+      <h2>Avengers</h2>
+      <p>Action Movie</p>
+      <button>watch now</button>
+    </div>
+    <!-- think of div as a box: it stores in that box-->
+
+    <!-- example:movie card example -->
+    <div class="movie-card">
+      <img src="/basicsss'/637276.png" width="500" alt="images" />
+      <h2>Avengers</h2>
+      <p>Action and superhero movie</p>
+      <button>Watch Now</button>
+    </div>
+    <!-- span is a small inline container.
+it is mainly used to target or group part of a text. 
+-->
+    <p>watch movies for <span>149</span> per month</p>
+    <!-- example -->
+    <p>watch movies for <span class="price">149 </span> per month</p>
+
+    <!-- div vs span -->
+    <!-- div used to group larger sections or blocks: -->
+    <div>
+      <h2>movie</h2>
+      <p>description</p>
+    </div>
+    <!-- span used for small part of the inside text -->
+    <p>
+      price:
+      <span>149</span>
+    </p>
+    <!-- div - big container/block
+    span - small inline container 
+    -->
+
+    <!-- block vs inline -->
+    <!-- block elements start on a new line and available width -->
+    <div>
+      <h1></h1>
+      <p></p>
+      <section></section>
+    </div>
+    <!-- inline elements they stay with in same line -->
+    <span></span>
+    <a href=""></a>
+
+    <!-- data attributes html also allows custom data attributes. -->
+    <div class="Movie card" data-movie-id="101">Avengers</div>
+    <!-- later javascript can read data movieid - 101 usefull in real applications -->
+  </body>
+</html>

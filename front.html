@@ -1,0 +1,55 @@
+<!-- Html audio,video,iframe and media elements -->
+ <!-- adding it to page -->
+<!-- add audio -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <audio  controls><source src="song.mp3" type="audio/mpeg">/audio>
+    <!-- controls displays the play pause volume progreess bar without controls is not normal to visible the user -->
+     <!-- add video tag -->
+      <video src="video" width="600"controls><source src="videos/movies.mp4" type="video.mp4"></video>
+      <!-- path src = "videos/movie.mp4" -->
+       <!-- add controls show video controls 
+       autoplay -> automatically start the video
+       modern browser often block autoplay if the video has sound
+       recommended approach
+       <video autoplay muted>
+       starts without sound 
+       loop -> repeats the video continuously
+       poster -> shows the image before the video starts think of a poster video thumbmail
+       -->
+
+       <!-- what is frame
+       iframe display external embedded content inside your webpage 
+       -->
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/9dV6Hl2u3vM?si=5PvV7EpgxrHb2Ahw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+       <!-- however many website block being displayed inside an iframe for security  reason -->
+        <!-- embed a youtube video 
+        you usually dont use the normal youtube watch url directly
+        
+        a normal urll look like 
+        youtube.com/watch?=VIDEO_ID
+        the emmbed format is
+        youtube.com/embed/viddeo_ID
+
+        easiest method is 
+        open the youtube  video
+        click share
+        click embed 
+        copy the provided  iframe code
+        paste it into html
+        -->
+
+        <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/9dV6Hl2u3vM"
+    allowfullscreen>
+</iframe>
+ </body>
+ </html>

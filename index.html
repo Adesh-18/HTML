@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>semantic html</title>
+</head>
+<body>
+  <header>
+    <!-- the header represents the top or introductory part of a page -->
+     <h1>Netflix</h1>
+     <p>unlimited movies and Tv shows</p>
+     <!-- common content logo website name introduction -->
+  </header>
+
+  <nav>
+    <!-- nav means navigation -->
+    <a href="/about.html">about</a>
+    <a href="index.html">home</a>
+    <a href="about.html">movies</a>
+    
+  </nav>
+  
+  <main>
+    <!-- the main tag contains the main content of the page -->
+     <h2>popular movies</h2>
+     <p>Explore our popular movies</p>
+     <!-- a page should generally one main element -->
+  </main>
+
+  <section>
+    <!-- group related content -->
+    <h2>popular movies</h2>
+    <p>Explore the most popular movies.</p>
+  </section>
+  <section>
+    <h2>new releases</h2>
+    <p>watch the latest movies.</p>
+    <!-- main popular movies section
+     new releases section
+     tv shows section 
+     -->
+  </section>
+<article>
+  <!-- an article represents independent content -->
+  <!-- blog post news article movie card  product card-->
+  <h3>avengers</h3>
+  <p>
+    an action superhero movie.
+  </p>
+</article>
+<aside>
+  <!-- aside contains related or secondary information-->
+   <!-- example
+    sidebar
+    advertisements
+    related links
+    recommendations -->
+    <h2>Recommended</h2>
+    <ul>
+      <li>Movie 1</li>
+      <li>movie 2</li>
+    </ul>
+</aside>
+  <footer>
+    <!-- it commonly contains 
+    copyright
+    privacy policy
+    social media links 
+    -->
+    <p>copy right 2026 my website</p>
+
+  </footer>
+</body>
+</html>
+<!-- semantic vs div -->
+
+<span>
+  <h1>my website</h1>
+</span>
+
+<span>
+  <a href="index.html">home</a>
+</span>
+<!-- but this does not clearly describe what each part does -->
+<!-- a better version -->
+
+<header>
+  <h1>My Website</h1>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+<main>
+  <h2>my content</h2>
+</main>
+
+<!-- both can display similar content but semantic html gives the page meaning and structure -->
+ <!-- div is a generic container -->
+  <div>
+    <h1>my web page</h1>
+  </div>
+<!-- it is commonly usedwhen:
+no semantic tag fits
+you need to group elements from css
+you need to group elements from javascript
+you use div a lot, but dont use it blindly for everything 
+-->
+
+<!-- <body>
+│
+├── <header>
+│     └── Website title
+│
+├── <nav>
+│     └── Navigation links
+│
+├── <main>
+│     │
+│     ├── <section>
+│     │      ├── <article>
+│     │      └── <article>
+│     │
+│     └── <section>
+│            └── <article>
+│
+└── <footer>
+      └── Copyright -->
+
+<!-- 
+header - top/intro area
+nav - navigation links
+main - main content
+section - related content
+article - independent content
+aside - side/related content
+footer - bottom area
+div - generic container
+
+
+semantic html matters 
+cleaner code
+better accesssibility
+better seo
+easier for developers to understand
+
+-->
